@@ -19,10 +19,10 @@ class StatusButons extends StatelessWidget {
             Radius.circular(20.0)
         ),
         side: BorderSide(
-            color: Colors.amber,
+            color: Colors.teal[300],
         ),
       ),
-      color: Colors.amber,
+      color: Colors.teal[300],
       onPressed: () {},
     );
   }

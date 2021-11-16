@@ -19,10 +19,10 @@ class OperatorButton extends StatelessWidget {
             Radius.circular(20.0)
         ),
         side: BorderSide(
-            color: Colors.orange,
+            color: Colors.teal,
         ),
       ),
-      color: Colors.orange,
+      color: Colors.teal,
       onPressed: () {},
     );
   }

@@ -19,7 +19,7 @@ class NumericButtons extends StatelessWidget {
             Radius.circular(20.0)
         ),
         side: BorderSide(
-          color: Colors.orange,
+          color: Colors.teal,
         ),
       ),
       color: Colors.white,
