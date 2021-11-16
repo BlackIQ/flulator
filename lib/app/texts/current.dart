@@ -9,6 +9,7 @@ class CurrentStatus extends StatelessWidget {
     return Text(
       number,
       style: TextStyle(
+        color: Colors.grey,
         fontSize: 30.0,
       ),
     );

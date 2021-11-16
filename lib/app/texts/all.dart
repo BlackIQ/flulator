@@ -9,6 +9,7 @@ class AllStatus extends StatelessWidget {
     return Text(
       number,
       style: TextStyle(
+        color: Colors.teal,
         fontSize: 50.0,
       ),
     );
