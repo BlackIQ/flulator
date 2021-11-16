@@ -4,15 +4,73 @@ import 'package:calculator/app/buttons/status.dart';
 import 'package:calculator/app/texts/all.dart';
 import 'package:calculator/app/texts/current.dart';
 import 'package:flutter/material.dart';
-// import 'package:url_launcher/link.dart';
-// import 'package:url_launcher/url_launcher.dart';
-
-import 'dart:async';
 
 class Calculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            SizedBox(
+              height: 15.0,
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    "Flulator",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+                      color: Colors.teal,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
+                  Text(
+                    "Flutter simple calculator",
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Colors.teal,
+                    ),
+                  )
+                ],
+              ),
+            ),
+            ListTile(
+              onTap: () {
+                showAboutDialog(
+                  context: context,
+                  applicationName: 'Flulator',
+                  applicationVersion: '1.0.0',
+                  applicationLegalese: 'Flutter simple calculator',
+                );
+              },
+              title: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.person,
+                    color: Colors.teal,
+                  ),
+                  SizedBox(
+                    width: 15.0,
+                  ),
+                  Text(
+                    "About",
+                    style: TextStyle(
+                      color: Colors.teal,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text(
           'Flulator',
@@ -35,6 +93,15 @@ class Calculator extends StatelessWidget {
           CurrentStatus(number: '250+250'),
           AllStatus(number: '500'),
           SizedBox(height: 20.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              StatusButons(option: 'C'),
+              StatusButons(option: 'Del'),
+              StatusButons(option: ''),
+              OperatorButton(operator: '%'),
+            ],
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
