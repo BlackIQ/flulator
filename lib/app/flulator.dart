@@ -2,6 +2,7 @@ import 'package:calculator/app/buttons/buttons.dart';
 import 'package:calculator/app/drawer/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:math_expressions/math_expressions.dart';
 
 class Flulator extends StatefulWidget {
   @override
@@ -32,8 +33,15 @@ class FlulatorState extends State<Flulator> {
   }
 
   void evaluation(String text) {
+
+    Parser p = Parser();
+    Expression exp = p.parse(_expression);
+    ContextModel cm = ContextModel();
+
+    double eval = exp.evaluate(EvaluationType.REAL, cm);
+
     setState(() {
-      _history = 'Amirhossein';
+      _history = eval.toString();
     });
   }
 
