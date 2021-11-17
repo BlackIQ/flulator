@@ -6,24 +6,24 @@ class OperatorButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      child: Text(
-        operator,
-        style: TextStyle(
-          color: Colors.white,
+    return SizedBox(
+      child: RaisedButton(
+        child: Text(
+          operator,
+          style: TextStyle(
+            color: Colors.white,
+          ),
         ),
-      ),
-      elevation: 0.0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-            Radius.circular(20.0)
-        ),
-        side: BorderSide(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+          side: BorderSide(
             color: Colors.teal,
+          ),
         ),
+        color: Colors.teal,
       ),
-      color: Colors.teal,
-      onPressed: () {},
+      width: 60,
+      height: 50,
     );
   }
 }
