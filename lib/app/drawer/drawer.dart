@@ -1,8 +1,9 @@
-import 'package:calculator/app/drawer/about.dart';
-import 'package:calculator/app/drawer/item.dart';
+import 'package:calculator/app/drawer/items/about.dart';
+import 'package:calculator/app/drawer/items/contact.dart';
+import 'package:calculator/app/drawer/items/item.dart';
 import 'package:flutter/material.dart';
 
-import 'head.dart';
+import 'items/head.dart';
 
 class FluDrawer extends StatelessWidget {
   @override
@@ -21,7 +22,7 @@ class FluDrawer extends StatelessWidget {
                 DrawerHead(),
                 Divider(color: Colors.teal),
                 AboutItem(),
-                DrawerItem(icon: Icons.phone, text: "Conact", onTap: () {}),
+                ContactItem(),
                 DrawerItem(icon: Icons.exit_to_app, text: "Exit", onTap: () {}),
               ],
             ),
