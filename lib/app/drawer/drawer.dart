@@ -1,4 +1,5 @@
 import 'package:calculator/app/drawer/items/about.dart';
+import 'package:calculator/app/drawer/items/app.dart';
 import 'package:calculator/app/drawer/items/developer.dart';
 import 'package:calculator/app/drawer/items/exit.dart';
 import 'package:calculator/app/drawer/items/head.dart';
@@ -21,6 +22,7 @@ class FluDrawer extends StatelessWidget {
               children: <Widget>[
                 DrawerHead(),
                 Divider(color: Colors.teal),
+                OpenApp(),
                 AboutItem(),
                 AboutDev(),
                 ExitItem(),
