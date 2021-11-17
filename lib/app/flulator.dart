@@ -11,8 +11,8 @@ class Flulator extends StatefulWidget {
 
 class FlulatorState extends State<Flulator> {
 
-  String _history = '';
-  String _expression = '';
+  String _history = 'Welcome!';
+  String _expression = 'Hi, Press AC to start app.';
 
   void numClick(String text) {
     setState(() {
