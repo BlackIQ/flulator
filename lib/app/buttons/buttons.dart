@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FluButton extends StatelessWidget {
-  FluButton({@required this.text, @required this.textColor, @required this.fillColor});
+  FluButton({@required this.text, @required this.textColor, @required this.fillColor, @required this.callback});
   final text;
   final textColor;
   final fillColor;
+  final Function callback;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,9 @@ class FluButton extends StatelessWidget {
               fontWeight: FontWeight.normal,
             ),
           ),
-          onPressed: () {},
+          onPressed: () {
+            callback(text);
+          },
         ),
         width: 65,
         height: 65,
