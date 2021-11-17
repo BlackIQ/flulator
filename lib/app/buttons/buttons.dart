@@ -9,24 +9,27 @@ class FluButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: FlatButton(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(50),
-        ),
-        color: fillColor,
-        child: Text(
-          text,
-          style: GoogleFonts.boogaloo(
-            color: textColor,
-            fontSize: 17,
-            fontWeight: FontWeight.normal,
+    return Container(
+      margin: EdgeInsets.all(10),
+      child: SizedBox(
+        child: FlatButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
           ),
+          color: fillColor,
+          child: Text(
+            text,
+            style: GoogleFonts.boogaloo(
+              color: textColor,
+              fontSize: 17,
+              fontWeight: FontWeight.normal,
+            ),
+          ),
+          onPressed: () {},
         ),
-        onPressed: () {},
+        width: 65,
+        height: 65,
       ),
-      width: 65,
-      height: 65,
     );
   }
 }
