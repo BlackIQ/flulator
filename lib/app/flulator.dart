@@ -1,5 +1,5 @@
-import 'package:calculator/app/buttons/buttons.dart';
-import 'package:calculator/app/drawer/drawer.dart';
+import 'package:flulator/app/buttons/buttons.dart';
+import 'package:flulator/app/drawer/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:math_expressions/math_expressions.dart';

@@ -9,7 +9,7 @@ class AboutItem extends StatelessWidget {
           context: context,
           applicationName: 'Flulator',
           applicationVersion: '1.0.0',
-          applicationLegalese: 'Flutter simple calculator',
+          applicationLegalese: 'Flutter simple flulator',
         );
       },
       title: Row(

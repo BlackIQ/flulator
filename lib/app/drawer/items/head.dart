@@ -18,7 +18,7 @@ class DrawerHead extends StatelessWidget {
           height: 5.0,
         ),
         Text(
-          "Flutter simple calculator",
+          "Flutter simple flulator",
           style: TextStyle(
             fontSize: 15.0,
             color: Colors.teal,

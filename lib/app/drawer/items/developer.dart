@@ -1,4 +1,4 @@
-import 'package:calculator/app/developer.dart';
+import 'package:flulator/app/developer.dart';
 import 'package:flutter/material.dart';
 
 class AboutDev extends StatelessWidget {

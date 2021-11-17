@@ -1,9 +1,9 @@
-import 'package:calculator/app/drawer/items/about.dart';
-import 'package:calculator/app/drawer/items/app.dart';
-import 'package:calculator/app/drawer/items/developer.dart';
-import 'package:calculator/app/drawer/items/exit.dart';
-import 'package:calculator/app/drawer/items/head.dart';
-import 'package:calculator/main.dart';
+import 'package:flulator/app/drawer/items/about.dart';
+import 'package:flulator/app/drawer/items/app.dart';
+import 'package:flulator/app/drawer/items/developer.dart';
+import 'package:flulator/app/drawer/items/exit.dart';
+import 'package:flulator/app/drawer/items/head.dart';
+import 'package:flulator/main.dart';
 import 'package:flutter/material.dart';
 
 class FluDrawer extends StatelessWidget {
