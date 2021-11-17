@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AboutItem extends StatelessWidget {
+class AboutDev extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -15,14 +15,14 @@ class AboutItem extends StatelessWidget {
       title: Row(
         children: <Widget>[
           Icon(
-            Icons.perm_device_information,
+            Icons.devices,
             color: Colors.teal,
           ),
           SizedBox(
             width: 15.0,
           ),
           Text(
-            "About app",
+            "About developer",
             style: TextStyle(
               color: Colors.teal,
             ),
