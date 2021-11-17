@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Calculator(),
+      home: Flulator(),
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),

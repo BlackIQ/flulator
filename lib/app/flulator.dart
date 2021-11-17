@@ -6,11 +6,11 @@ import 'package:calculator/app/texts/all.dart';
 import 'package:calculator/app/texts/current.dart';
 import 'package:flutter/material.dart';
 
-class Calculator extends StatefulWidget {
-  _CalculatorState createState() => _CalculatorState();
+class Flulator extends StatefulWidget {
+  _FlulatorState createState() => _FlulatorState();
 }
 
-class _CalculatorState extends State<Calculator> {
+class _FlulatorState extends State<Flulator> {
 
   String current = '250+250';
   int all = 500;
