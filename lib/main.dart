@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Flulator(),
       theme: ThemeData(
+        backgroundColor: Colors.white,
         primarySwatch: Colors.teal,
       ),
     );
