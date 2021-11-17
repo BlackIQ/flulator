@@ -9,6 +9,34 @@ class Flulator extends StatefulWidget {
 }
 
 class FlulatorState extends State<Flulator> {
+
+  String _history = '';
+  String _expression = '';
+
+  void numClick(String text) {
+    setState(() {
+      _expression += text;
+    });
+  }
+
+  void clear(String text) {
+    setState(() {
+      if (text == 'AC') {
+        _expression = '';
+        _history = '';
+      }
+      else if (text == 'C') {
+        _expression = '';
+      }
+    });
+  }
+
+  void evaluation(String text) {
+    setState(() {
+      _history = 'Amirhossein';
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +55,7 @@ class FlulatorState extends State<Flulator> {
           Container(
             padding: EdgeInsets.only(right: 10),
             child: Text(
-              '123*123',
+              _expression,
               style: GoogleFonts.boogaloo(
                 fontSize: 25,
                 color: Colors.grey,
@@ -38,7 +66,7 @@ class FlulatorState extends State<Flulator> {
           Container(
             padding: EdgeInsets.only(right: 10),
             child: Text(
-              '123',
+              _history,
               style: GoogleFonts.boogaloo(
                 fontSize: 50,
                 color: Colors.teal,
@@ -54,21 +82,25 @@ class FlulatorState extends State<Flulator> {
                 text: 'AC',
                 fillColor: Colors.grey,
                 textColor: Colors.white,
+                callback: clear,
               ),
               FluButton(
                 text: 'C',
                 fillColor: Colors.grey,
                 textColor: Colors.white,
+                callback: clear,
               ),
               FluButton(
                 text: '%',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
+                callback: numClick,
               ),
               FluButton(
                 text: '/',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
+                callback: numClick,
               )
             ],
           ),
@@ -79,21 +111,25 @@ class FlulatorState extends State<Flulator> {
                 text: '7',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '8',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '9',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '*',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
+                callback: numClick,
               )
             ],
           ),
@@ -104,21 +140,25 @@ class FlulatorState extends State<Flulator> {
                 text: '4',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '5',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '6',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '-',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
+                callback: numClick,
               )
             ],
           ),
@@ -129,21 +169,25 @@ class FlulatorState extends State<Flulator> {
                 text: '1',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '2',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '3',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '+',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
+                callback: numClick,
               )
             ],
           ),
@@ -154,21 +198,25 @@ class FlulatorState extends State<Flulator> {
                 text: '.',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '0',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '00',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
+                callback: numClick,
               ),
               FluButton(
                 text: '=',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
+                callback: evaluation,
               )
             ],
           ),
