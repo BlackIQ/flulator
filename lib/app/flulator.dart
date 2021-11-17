@@ -3,7 +3,12 @@ import 'package:calculator/app/drawer/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Flulator extends StatelessWidget {
+class Flulator extends StatefulWidget {
+  @override
+  FlulatorState createState() => FlulatorState();
+}
+
+class FlulatorState extends State<Flulator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
