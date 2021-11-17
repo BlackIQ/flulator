@@ -1,3 +1,4 @@
+import 'package:calculator/app/developer.dart';
 import 'package:flutter/material.dart';
 
 class AboutDev extends StatelessWidget {
@@ -5,11 +6,11 @@ class AboutDev extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: () {
-        showAboutDialog(
-          context: context,
-          applicationName: 'Flulator',
-          applicationVersion: '1.0.0',
-          applicationLegalese: 'Flutter simple calculator',
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => Developer()
+          )
         );
       },
       title: Row(
