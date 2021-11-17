@@ -6,6 +6,8 @@ import 'package:calculator/app/texts/all.dart';
 import 'package:calculator/app/texts/current.dart';
 import 'package:flutter/material.dart';
 
+import 'buttons/exit.dart';
+
 class Flulator extends StatefulWidget {
   _FlulatorState createState() => _FlulatorState();
 }
@@ -44,9 +46,9 @@ class _FlulatorState extends State<Flulator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              StatusButons(option: 'C'),
+              ExitButton(),
               StatusButons(option: 'Del'),
-              StatusButons(option: ''),
+              StatusButons(option: 'C'),
               OperatorButton(operator: '%'),
             ],
           ),
