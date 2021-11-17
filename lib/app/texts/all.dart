@@ -7,7 +7,7 @@ class AllStatus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      number,
+      number.toString(),
       style: TextStyle(
         color: Colors.teal,
         fontSize: 50.0,
