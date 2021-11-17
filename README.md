@@ -1,16 +1,12 @@
 # calculator
 
-Just a simple Flutter front end.
+Just a simple Flutter calculator!
 
-## Getting Started
+### Download
 
-This project is a starting point for a Flutter application.
+You can download it for your **Android** Devices using these links:
 
-A few resources to get you started if this is your first Flutter project:
+- MyKet -> [Download](https://flutter.dev)
+- Play Store -> [Download](https://flutter.dev)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**There is no official relese for **iOS** until geting **Apple developer service**.
