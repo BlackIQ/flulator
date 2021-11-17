@@ -14,7 +14,7 @@ class FluDrawer extends StatelessWidget {
             height: 15.0,
           ),
           Padding(
-            padding: EdgeInsets.all(15.0),
+            padding: EdgeInsets.all(10.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
