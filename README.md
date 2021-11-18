@@ -1,4 +1,4 @@
-# calculator
+# Flulator
 
 Just a simple Flutter calculator!
 
