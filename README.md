@@ -6,7 +6,13 @@ Just a simple Flutter calculator!
 
 You can download it for your **Android** Devices using these links:
 
-- MyKet -> [Download](https://flutter.dev)
-- Play Store -> [Download](https://flutter.dev)
+Links will be added.
 
-**There is no official relese for **iOS** until geting **Apple developer service**.
+<!-- - MyKet -> [Download](https://flutter.dev) -->
+<!-- - Play Store -> [Download](https://flutter.dev) -->
+
+---
+
+**Note**
+
+**iOS** app is not published yet.
