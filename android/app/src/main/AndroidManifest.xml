@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ir.blackiq.flulator.calculator">
    <application
-        android:label="calculator"
+        android:label="Flulator"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
