@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+
+* {
+  font-family: "Boogaloo", cursive;
+}
+
+.main {
+  background: #f1f1f1;
+  color: teal;
+  padding: 5%;
+}
+
+.r10 {
+  border-radius: 10px;
+}
+
+.right {
+  float: right;
+}
