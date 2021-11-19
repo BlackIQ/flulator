@@ -4,7 +4,7 @@ Just a simple Flutter calculator!
 
 ### Download
 
-You can download it for your **Android** Devices using these links:
+You can download it for your **Android** Devices using [this link](http://office.narbon.ir:4488/flulator/flulator.apk) or linkd below:
 
 Links will be added.
 
