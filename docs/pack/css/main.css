@@ -10,6 +10,11 @@
   padding: 5%;
 }
 
+.imgbox {
+  height: 50%;
+  width: 50%;
+}
+
 .r10 {
   border-radius: 10px;
 }
