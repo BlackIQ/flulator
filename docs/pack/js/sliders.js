@@ -8,7 +8,6 @@ for (let i = 0; i < sliderElements.length; i++) {
         interval: 6000,
         pauseOnFocus: false,
         pauseOnHover: false,
-        fixedHeight: "500px",
         type: "loop",
         breakpoints: {
             720: {
