@@ -20,6 +20,14 @@ class FlulatorState extends State<Flulator> {
     });
   }
 
+  void deLast(String text) {
+    setState(() {
+      List<String> c = _expression.split("");
+      c.removeLast();
+      _expression = c.join();
+    });
+  }
+
   void clear(String text) {
     setState(() {
       if (text == 'AC') {
@@ -99,10 +107,10 @@ class FlulatorState extends State<Flulator> {
                 callback: clear,
               ),
               FluButton(
-                text: '%',
-                fillColor: Colors.blueGrey,
+                text: '<',
+                fillColor: Colors.grey,
                 textColor: Colors.white,
-                callback: numClick,
+                callback: deLast,
               ),
               FluButton(
                 text: '/',
