@@ -1,4 +1,3 @@
-import 'package:flulator/app/developer.dart';
 import 'package:flulator/app/flulator.dart';
 import 'package:flutter/material.dart';
 
