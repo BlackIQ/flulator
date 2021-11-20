@@ -3,26 +3,34 @@ import 'package:flutter/material.dart';
 class DrawerHead extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Row(
+      // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
-        Text(
-          "Flulator",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20.0,
-            color: Colors.teal,
-          ),
+        Image.asset(
+          'asset/logo.jpg',
+          height: 50,
+          width: 50,
         ),
-        SizedBox(
-          height: 5.0,
-        ),
-        Text(
-          "Flutter simple flulator",
-          style: TextStyle(
-            fontSize: 15.0,
-            color: Colors.teal,
-          ),
+        SizedBox(width: 15),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Flulator',
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.teal,
+              ),
+            ),
+            Text(
+              'Open source flutter calculator',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.teal,
+              ),
+            ),
+          ],
         ),
       ],
     );

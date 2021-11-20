@@ -12,23 +12,20 @@ class FluDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          SizedBox(
-            height: 15.0,
-          ),
           Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 DrawerHead(),
-                Divider(color: Colors.teal),
-                OpenApp(),
-                AboutItem(),
-                AboutDev(),
-                ExitItem(),
               ],
             ),
           ),
+          Divider(color: Colors.teal),
+          OpenApp(),
+          AboutItem(),
+          AboutDev(),
+          ExitItem(),
         ],
       ),
     );
