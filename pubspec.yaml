@@ -29,3 +29,6 @@ flutter_icons:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - asset/logo.jpg
