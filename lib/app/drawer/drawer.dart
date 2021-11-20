@@ -24,7 +24,6 @@ class FluDrawer extends StatelessWidget {
           Divider(color: Colors.teal),
           OpenApp(),
           AboutItem(),
-          AboutDev(),
           ExitItem(),
         ],
       ),
