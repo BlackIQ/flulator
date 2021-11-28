@@ -2,9 +2,11 @@
 
 Just a simple Flutter calculator!
 
+For more information check [Flulator webpage](https://flulator.blackiq.ir).
+
 ### Download
 
-You can download it for your **Android** Devices using [this link](http://office.narbon.ir:4488/flulator/flulator.apk) or linkd below:
+You can download it for your **Android** Devices using [Flulator webpage](https://flulator.blackiq.ir/app/flulator.apk) or linkd below:
 
 Links will be added.
 
