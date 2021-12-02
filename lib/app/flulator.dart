@@ -59,6 +59,7 @@ class FlulatorState extends State<Flulator> {
       backgroundColor: Colors.white,
       drawer: FluDrawer(),
       appBar: AppBar(
+        elevation: 0,
         title: Text(
           'Flutter',
           style: GoogleFonts.boogaloo(),
@@ -90,7 +91,36 @@ class FlulatorState extends State<Flulator> {
             ),
             alignment: Alignment(1, 1),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              FluButton(
+                text: '-',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: clear,
+              ),
+              FluButton(
+                text: '+',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: clear,
+              ),
+              FluButton(
+                text: '(',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: deLast,
+              ),
+              FluButton(
+                text: ')',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              )
+            ],
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
