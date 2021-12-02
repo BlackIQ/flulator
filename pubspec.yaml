@@ -32,3 +32,4 @@ flutter:
 
   assets:
     - asset/logo.jpg
+    - asset/header.jpg
