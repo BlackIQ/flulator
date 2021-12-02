@@ -1,8 +1,6 @@
-import 'package:flulator/app/drawer/items/about.dart';
-import 'package:flulator/app/drawer/items/app.dart';
-import 'package:flulator/app/drawer/items/exit.dart';
-import 'package:flulator/app/drawer/items/head.dart';
+import 'package:flulator/app/widgets/drawer/items/item.dart';
 import 'package:flutter/material.dart';
+import 'dart:io';
 
 class FluDrawer extends StatelessWidget {
   @override
@@ -39,9 +37,11 @@ class FluDrawer extends StatelessWidget {
               ],
             ),
           ),
-          OpenApp(),
-          AboutItem(),
-          ExitItem(),
+          DrawerItem(
+            icon: Icons.exit_to_app,
+            text: 'Exit',
+            onTap: () => exit(1),
+          ),
         ],
       ),
     );
