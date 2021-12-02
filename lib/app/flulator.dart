@@ -99,19 +99,19 @@ class FlulatorState extends State<Flulator> {
                 text: '-',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
-                callback: clear,
+                callback: numClick,
               ),
               FluButton(
                 text: '+',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
-                callback: clear,
+                callback: numClick,
               ),
               FluButton(
                 text: '(',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
-                callback: deLast,
+                callback: numClick,
               ),
               FluButton(
                 text: ')',
