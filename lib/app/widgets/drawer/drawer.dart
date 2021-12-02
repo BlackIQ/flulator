@@ -1,4 +1,5 @@
-import 'package:flulator/app/widgets/drawer/items/item.dart';
+import 'package:flulator/app/pages/developer.dart';
+import 'package:flulator/app/widgets/drawer/drawer_item.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 
@@ -36,6 +37,35 @@ class FluDrawer extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          DrawerItem(
+            icon: Icons.info_outline,
+            text: 'About App',
+            onTap: () {
+              showAboutDialog(
+                applicationIcon: Image.asset(
+                  'asset/logo.jpg',
+                  height: 50,
+                  width: 50,
+                ),
+                context: context,
+                applicationName: 'Flulator',
+                applicationVersion: '1.1.0',
+                applicationLegalese: 'Flutter simple calculator',
+              );
+            },
+          ),
+          DrawerItem(
+            icon: Icons.laptop_mac,
+            text: 'Developer',
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => Developer(),
+                ),
+              );
+            },
           ),
           DrawerItem(
             icon: Icons.exit_to_app,
