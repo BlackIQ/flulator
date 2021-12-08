@@ -29,18 +29,21 @@ class Application extends StatelessWidget {
             Heading(text: 'Overview'),
             SizedBox(height: 10),
             ParagraphText(
-                text:
-                    'Flulator is a simple free open source calculator powered by Flutter.'),
+              text:
+                  'Flulator is a simple free open source calculator powered by Flutter.',
+            ),
             SizedBox(height: 15),
             Heading(text: 'Features'),
             SizedBox(height: 10),
             ParagraphText(
-                text:
-                    "In fact Flulator doesn't have too much features but from 4th release, Pro Calculator is available."),
+              text:
+                  "In fact Flulator doesn't have too much features but from 4th release, Pro Calculator is available.",
+            ),
             Divider(color: Colors.teal),
             ParagraphText(
-                text:
-                    "To read about development and other things, check out development page in drawer of by tapping button below."),
+              text:
+                  "To read about development and other things, check out development page in drawer of by tapping button below.",
+            ),
             SizedBox(height: 10),
             WideButton(
               onTap: () {
@@ -56,8 +59,8 @@ class Application extends StatelessWidget {
             ),
             SizedBox(height: 20),
             ParagraphText(
-                text:
-                "For more information, head over to Flulator web page.",),
+              text: "For more information, head over to Flulator web page.",
+            ),
             SizedBox(height: 10),
             WideButton(
               onTap: () async {
