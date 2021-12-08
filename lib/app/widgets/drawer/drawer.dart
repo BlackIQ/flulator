@@ -1,5 +1,7 @@
-import 'package:flulator/app/pages/developer.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flulator/app/widgets/drawer/drawer_item.dart';
+import 'package:flulator/app/pages/application.dart';
+import 'package:flulator/app/pages/development.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 
@@ -39,36 +41,31 @@ class FluDrawer extends StatelessWidget {
             ),
           ),
           DrawerItem(
-            icon: Icons.info_outline,
+            icon: FontAwesomeIcons.infoCircle,
             text: 'About App',
-            onTap: () {
-              showAboutDialog(
-                applicationIcon: Image.asset(
-                  'asset/logo.jpg',
-                  height: 50,
-                  width: 50,
-                ),
-                context: context,
-                applicationName: 'Flulator',
-                applicationVersion: '1.1.0',
-                applicationLegalese: 'Flutter simple calculator',
-              );
-            },
-          ),
-          DrawerItem(
-            icon: Icons.laptop_mac,
-            text: 'Developer',
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   fullscreenDialog: true,
-                  builder: (context) => Developer(),
+                  builder: (context) => Application(),
                 ),
               );
             },
           ),
           DrawerItem(
-            icon: Icons.exit_to_app,
+            icon: FontAwesomeIcons.tools,
+            text: 'Development',
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => Development(),
+                ),
+              );
+            },
+          ),
+          DrawerItem(
+            icon: FontAwesomeIcons.signOutAlt,
             text: 'Exit',
             onTap: () => exit(1),
           ),
