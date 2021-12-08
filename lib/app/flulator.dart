@@ -10,7 +10,6 @@ class Flulator extends StatefulWidget {
 }
 
 class FlulatorState extends State<Flulator> {
-
   String _history = 'Welcome!';
   String _expression = 'Hi, Press AC to start app.';
 
@@ -33,15 +32,13 @@ class FlulatorState extends State<Flulator> {
       if (text == 'AC') {
         _expression = '';
         _history = '';
-      }
-      else if (text == 'C') {
+      } else if (text == 'C') {
         _expression = '';
       }
     });
   }
 
   void evaluation(String text) {
-
     Parser p = Parser();
     Expression exp = p.parse(_expression);
     ContextModel cm = ContextModel();
@@ -60,6 +57,18 @@ class FlulatorState extends State<Flulator> {
       drawer: FluDrawer(),
       appBar: AppBar(
         elevation: 0,
+        actions: [
+          ElevatedButton(
+            onPressed: () {},
+            child: Text(
+              'Pro Calculator',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 15,
+              ),
+            ),
+          ),
+        ],
         title: Text(
           'Flutter',
           style: GoogleFonts.boogaloo(),
