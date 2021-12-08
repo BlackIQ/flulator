@@ -13,13 +13,11 @@
     <meta property="og:description" content="Flulator | Open Source Flutter calculator">
 
     <script src="https://kit.fontawesome.com/4a679d8ec0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="pack/css/mdb/mdb.rtl.min.css">
-    <link rel="stylesheet" href="pack/css/fontawesome/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="pack/css/main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="pack/css/splidejs/themes/splide-skyblue.min.css">
 </head>
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#008080" fill-opacity="1" d="M0,96L57.6,160L115.2,64L172.8,224L230.4,256L288,256L345.6,96L403.2,96L460.8,320L518.4,160L576,64L633.6,64L691.2,128L748.8,32L806.4,96L864,160L921.6,64L979.2,128L1036.8,192L1094.4,192L1152,64L1209.6,96L1267.2,64L1324.8,64L1382.4,128L1440,288L1440,0L1382.4,0L1324.8,0L1267.2,0L1209.6,0L1152,0L1094.4,0L1036.8,0L979.2,0L921.6,0L864,0L806.4,0L748.8,0L691.2,0L633.6,0L576,0L518.4,0L460.8,0L403.2,0L345.6,0L288,0L230.4,0L172.8,0L115.2,0L57.6,0L0,0Z"></path></svg>
     <div class="main">
         <h1>
             Flulator
@@ -35,94 +33,74 @@
         </ul>
         <br>
         <h3>Application Images</h3>
-        <div class="splide default-slider pb-5" data-splide='{"drag":"free","arrows":false,"direction":"ltr", "pagination":true}'>
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide p-1 pb-1">
-                        <div class="card imgbox">
-                            <img src="pack/images/home.png" class="r10">
-                        </div>
-                    </li>
-                    <li class="splide__slide p-1 pb-1">
-                        <div class="card imgbox">
-                            <img src="pack/images/test.png" class="r10">
-                        </div>
-                    </li>
-                    <li class="splide__slide p-1 pb-1">
-                        <div class="card imgbox">
-                            <img src="pack/images/drawer.png" class="r10">
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <div class="images">
+            <img alt="Home" class="image" src="pack/images/home.png">
+            <img alt="Test" class="image" src="pack/images/test.png">
+            <img alt="Drawer" class="image" src="pack/images/drawer.png">
         </div>
         <hr>
         <h3>Changes and versions</h3>
-        <div class="splide default-slider pb-5" data-splide='{"drag":"free","arrows":false,"direction":"ltr", "pagination":true}'>
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide p-2 pb-3">
-                        <div class="card h-100" style="border: solid 1px teal;">
-                            <div class="card-body">
-                                <h5 class="text-black">Version 2.4.3 | <span style="font-size: 15px;">Dec 2 2021</span> | <span style="color: red;">Lastest</span></h5>
-                                <hr>
-                                <p><i class="fa fa-refresh"></i> Updates</p>
-                                <ul>
-                                    <li>Add new buttons</li>
-                                    <li>Update buttons size</li>
-                                    <li>Update Drawer header</li>
-                                </ul>
-                                <p><i class="fa fa-bug"></i> Bugs</p>
-                                <ul>
-                                    <li>Fix issue in Navigator</li>
-                                    <li>Fix issue in some pages</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/BlackIQ/flulator/releases/tag/flulator-2.4.3"><i class="fa fa-github"></i> Download source</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide p-2 pb-3">
-                        <div class="card h-100" style="border: solid 1px #aaa;">
-                            <div class="card-body">
-                                <h5 class="text-black">Version 1.1.0 | <span style="font-size: 15px;">Nov 20 2021</span></h5>
-                                <hr>
-                                <p><i class="fa fa-refresh"></i> Updates</p>
-                                <ul>
-                                    <li>Add delete last item (Back-Space)</li>
-                                </ul>
-                                <p><i class="fa fa-bug"></i> Bugs</p>
-                                <ul>
-                                    <li>Fixed issues in Drawer</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/BlackIQ/flulator/releases/tag/flulator-1.1.0"><i class="fa fa-github"></i> Download source</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide p-2 pb-3">
-                        <div class="card h-100" style="border: solid 1px #aaa;">
-                            <div class="card-body">
-                                <h5 class="text-black">Version 1.0.0 | <span style="font-size: 15px;">Nov 17 2021</span></h5>
-                                <hr>
-                                <p><i class="fa fa-refresh"></i> Updates</p>
-                                <ul>
-                                    <li>Added Google Fonts</li>
-                                    <li>Added About developer</li>
-                                </ul>
-                                <p><i class="fa fa-bug"></i> Bugs</p>
-                                <ul>
-                                    <li>Fixed issues in connecting to internet</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://github.com/BlackIQ/flulator/releases/tag/flulator-1.0.0"><i class="fa fa-github"></i> Download source</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+        <div class="versions">
+            <div class="col-md-4 version">
+                <div class="card lastversion">
+                    <div class="card-body">
+                        <h5 class="text-black">Version 2.4.3 | <span class="date">Dec 2 2021</span> | <span class="lastest">Lastest</span></h5>
+                        <hr>
+                        <p><i class="fa fa-refresh"></i> Updates</p>
+                        <ul>
+                            <li>Add new buttons</li>
+                            <li>Update buttons size</li>
+                            <li>Update Drawer header</li>
+                        </ul>
+                        <p><i class="fa fa-bug"></i> Bugs</p>
+                        <ul>
+                            <li>Fix issue in Navigator</li>
+                            <li>Fix issue in some pages</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/BlackIQ/flulator/releases/tag/flulator-2.4.3"><i class="fa fa-github"></i> Download source</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 version">
+                <div class="card preversion">
+                    <div class="card-body">
+                        <h5 class="text-black">Version 1.1.0 | <span class="date">Nov 20 2021</span></h5>
+                        <hr>
+                        <p><i class="fa fa-refresh"></i> Updates</p>
+                        <ul>
+                            <li>Add delete last item (Back-Space)</li>
+                        </ul>
+                        <p><i class="fa fa-bug"></i> Bugs</p>
+                        <ul>
+                            <li>Fixed issues in Drawer</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/BlackIQ/flulator/releases/tag/flulator-1.1.0"><i class="fa fa-github"></i> Download source</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 version">
+                <div class="card preversion">
+                    <div class="card-body">
+                        <h5 class="text-black">Version 1.0.0 | <span style="font-size: 15px;">Nov 17 2021</span></h5>
+                        <hr>
+                        <p><i class="fa fa-refresh"></i> Updates</p>
+                        <ul>
+                            <li>Added Google Fonts</li>
+                            <li>Added About developer</li>
+                        </ul>
+                        <p><i class="fa fa-bug"></i> Bugs</p>
+                        <ul>
+                            <li>Fixed issues in connecting to internet</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/BlackIQ/flulator/releases/tag/flulator-1.0.0"><i class="fa fa-github"></i> Download source</a>
+                    </div>
+                </div>
             </div>
         </div>
         <hr>
