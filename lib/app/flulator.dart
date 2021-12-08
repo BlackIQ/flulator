@@ -1,4 +1,4 @@
-import 'package:flulator/app/widgets/buttons/buttons.dart';
+import 'package:flulator/app/widgets/buttons/calculator_buttons.dart';
 import 'package:flulator/app/widgets/drawer/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
