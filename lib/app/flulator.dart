@@ -70,7 +70,7 @@ class FlulatorState extends State<Flulator> {
           ),
         ],
         title: Text(
-          'Flutter',
+          'Flulator',
           style: GoogleFonts.boogaloo(),
         ),
         centerTitle: true,
