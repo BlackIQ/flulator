@@ -17,6 +17,7 @@ dependencies:
   math_expressions: ^2.2.0
   flutter_launcher_icons: ^0.9.2
   font_awesome_flutter: ^9.2.0
+  url_launcher: ^6.0.10
 
 dev_dependencies:
   flutter_test:
