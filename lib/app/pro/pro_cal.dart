@@ -14,9 +14,31 @@ class ProCalculatorState extends State<ProCalculator> {
   String _expression = 'Hi, Press AC to start app.';
 
   void numClick(String text) {
-    setState(() {
-      _expression += text;
-    });
+    if (text == 'sin') {
+      setState(() {
+        _expression += '${text}(';
+      });
+    }
+    else if (text == 'cos') {
+      setState(() {
+        _expression += '${text}(';
+      });
+    }
+    else if (text == 'tan') {
+      setState(() {
+        _expression += '${text}(';
+      });
+    }
+    else if (text == '√') {
+      setState(() {
+        _expression += 'sqrt(';
+      });
+    }
+    else {
+      setState(() {
+        _expression += text;
+      });
+    }
   }
 
   void deLast(String text) {
@@ -35,6 +57,13 @@ class ProCalculatorState extends State<ProCalculator> {
       } else if (text == 'C') {
         _expression = '';
       }
+    });
+  }
+
+  void percent(String text) {
+    double per = int.parse(_expression) / 100;
+    setState(() {
+      _history = per.toString();
     });
   }
 
@@ -96,42 +125,13 @@ class ProCalculatorState extends State<ProCalculator> {
             child: Text(
               _history,
               style: GoogleFonts.boogaloo(
-                fontSize: 40,
+                fontSize: 30,
                 color: Colors.teal,
               ),
             ),
             alignment: Alignment(1, 1),
           ),
           SizedBox(height: 10),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              ProButton(
-                text: 'sin',
-                fillColor: Colors.blueGrey[300],
-                textColor: Colors.white,
-                callback: numClick,
-              ),
-              ProButton(
-                text: 'cos',
-                fillColor: Colors.blueGrey[300],
-                textColor: Colors.white,
-                callback: numClick,
-              ),
-              ProButton(
-                text: 'cot',
-                fillColor: Colors.blueGrey[300],
-                textColor: Colors.white,
-                callback: numClick,
-              ),
-              ProButton(
-                text: 'tan',
-                fillColor: Colors.blueGrey[300],
-                textColor: Colors.white,
-                callback: numClick,
-              )
-            ],
-          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
@@ -158,7 +158,13 @@ class ProCalculatorState extends State<ProCalculator> {
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
                 callback: numClick,
-              )
+              ),
+              ProButton(
+                text: '√',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
             ],
           ),
           Row(
@@ -187,7 +193,13 @@ class ProCalculatorState extends State<ProCalculator> {
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
                 callback: numClick,
-              )
+              ),
+              ProButton(
+                text: '^',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
             ],
           ),
           Row(
@@ -216,7 +228,13 @@ class ProCalculatorState extends State<ProCalculator> {
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
                 callback: numClick,
-              )
+              ),
+              ProButton(
+                text: 'sin',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
             ],
           ),
           Row(
@@ -245,7 +263,13 @@ class ProCalculatorState extends State<ProCalculator> {
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
                 callback: numClick,
-              )
+              ),
+              ProButton(
+                text: 'cos',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
             ],
           ),
           Row(
@@ -274,7 +298,13 @@ class ProCalculatorState extends State<ProCalculator> {
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
                 callback: numClick,
-              )
+              ),
+              ProButton(
+                text: 'tan',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
             ],
           ),
           Row(
@@ -303,7 +333,13 @@ class ProCalculatorState extends State<ProCalculator> {
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
                 callback: evaluation,
-              )
+              ),
+              ProButton(
+                text: '%',
+                fillColor: Colors.blueGrey,
+                textColor: Colors.white,
+                callback: percent,
+              ),
             ],
           ),
         ],
