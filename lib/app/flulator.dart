@@ -1,3 +1,4 @@
+import 'package:flulator/app/pro/pro_cal.dart';
 import 'package:flulator/app/widgets/buttons/calculator_buttons.dart';
 import 'package:flulator/app/widgets/drawer/drawer.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,14 @@ class FlulatorState extends State<Flulator> {
         elevation: 0,
         actions: [
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => ProCalculator()
+                ),
+              );
+            },
             child: Text(
               'Pro Calculator',
               style: TextStyle(
