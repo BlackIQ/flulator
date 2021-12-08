@@ -1,9 +1,12 @@
+import 'package:flulator/app/pro/pro_cal.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flulator/app/widgets/drawer/drawer_item.dart';
 import 'package:flulator/app/pages/application.dart';
 import 'package:flulator/app/pages/development.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
+
+import '../../flulator.dart';
 
 class FluDrawer extends StatelessWidget {
   @override
@@ -40,6 +43,31 @@ class FluDrawer extends StatelessWidget {
               ],
             ),
           ),
+          DrawerItem(
+            icon: FontAwesomeIcons.equals,
+            text: 'Normal Calculator',
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => Flulator(),
+                ),
+              );
+            },
+          ),
+          DrawerItem(
+            icon: FontAwesomeIcons.squareRootAlt,
+            text: 'Pro Calculator',
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => ProCalculator(),
+                ),
+              );
+            },
+          ),
+          Divider(color: Colors.teal),
           DrawerItem(
             icon: FontAwesomeIcons.infoCircle,
             text: 'About App',
