@@ -102,7 +102,7 @@ class FlulatorState extends State<Flulator> {
             child: Text(
               _history,
               style: GoogleFonts.boogaloo(
-                fontSize: 50,
+                fontSize: 35,
                 color: Colors.teal,
               ),
             ),
