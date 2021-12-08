@@ -1,4 +1,4 @@
-import 'package:flulator/app/widgets/buttons/calculator_buttons.dart';
+import 'package:flulator/app/widgets/buttons/pro_buttons.dart';
 import 'package:flulator/app/widgets/drawer/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -85,7 +85,7 @@ class ProCalculatorState extends State<ProCalculator> {
             child: Text(
               _expression,
               style: GoogleFonts.boogaloo(
-                fontSize: 25,
+                fontSize: 20,
                 color: Colors.grey,
               ),
             ),
@@ -96,7 +96,7 @@ class ProCalculatorState extends State<ProCalculator> {
             child: Text(
               _history,
               style: GoogleFonts.boogaloo(
-                fontSize: 50,
+                fontSize: 40,
                 color: Colors.teal,
               ),
             ),
@@ -106,25 +106,54 @@ class ProCalculatorState extends State<ProCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FluButton(
+              ProButton(
+                text: 'sin',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
+              ProButton(
+                text: 'cos',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
+              ProButton(
+                text: 'cot',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              ),
+              ProButton(
+                text: 'tan',
+                fillColor: Colors.blueGrey[300],
+                textColor: Colors.white,
+                callback: numClick,
+              )
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              ProButton(
                 text: '-',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '+',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '(',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: ')',
                 fillColor: Colors.blueGrey[300],
                 textColor: Colors.white,
@@ -135,25 +164,25 @@ class ProCalculatorState extends State<ProCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FluButton(
+              ProButton(
                 text: 'AC',
                 fillColor: Colors.grey,
                 textColor: Colors.white,
                 callback: clear,
               ),
-              FluButton(
+              ProButton(
                 text: 'C',
                 fillColor: Colors.grey,
                 textColor: Colors.white,
                 callback: clear,
               ),
-              FluButton(
+              ProButton(
                 text: '<',
                 fillColor: Colors.grey,
                 textColor: Colors.white,
                 callback: deLast,
               ),
-              FluButton(
+              ProButton(
                 text: '/',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
@@ -164,25 +193,25 @@ class ProCalculatorState extends State<ProCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FluButton(
+              ProButton(
                 text: '7',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '8',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '9',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '*',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
@@ -193,25 +222,25 @@ class ProCalculatorState extends State<ProCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FluButton(
+              ProButton(
                 text: '4',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '5',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '6',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '-',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
@@ -222,25 +251,25 @@ class ProCalculatorState extends State<ProCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FluButton(
+              ProButton(
                 text: '1',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '2',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '3',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '+',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
@@ -251,25 +280,25 @@ class ProCalculatorState extends State<ProCalculator> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              FluButton(
+              ProButton(
                 text: '.',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '0',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '00',
                 fillColor: Colors.white,
                 textColor: Colors.teal,
                 callback: numClick,
               ),
-              FluButton(
+              ProButton(
                 text: '=',
                 fillColor: Colors.blueGrey,
                 textColor: Colors.white,
