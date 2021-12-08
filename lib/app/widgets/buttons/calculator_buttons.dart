@@ -30,8 +30,8 @@ class FluButton extends StatelessWidget {
             callback(text);
           },
         ),
-        width: 55,
-        height: 55,
+        width: 50,
+        height: 50,
       ),
     );
   }
