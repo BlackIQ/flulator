@@ -1,7 +1,9 @@
+import 'package:flulator/app/widgets/buttons/wide_button.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Developer extends StatelessWidget {
+class Development extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,6 +53,11 @@ class Developer extends StatelessWidget {
                 color: Colors.teal,
                 fontSize: 20,
               ),
+            ),
+            WideButton(
+              onTap: () {},
+              text: 'Hi',
+              icon: FontAwesomeIcons.laptop,
             ),
           ],
         ),
